@@ -1,0 +1,22 @@
+# TP2 – Réponses aux questions
+**Module : Développement mobile avec React Native – IAIL S5**
+
+**1. Pourquoi filter() est-il adapté à la recherche de produits disponibles ?**
+
+La méthode `filter()` permet de créer un nouveau tableau contenant uniquement les éléments qui respectent une condition. Elle permet donc de sélectionner les produits dont le stock est supérieur à zéro sans modifier le tableau initial.
+
+**2. Quelle différence existe entre map() et reduce() ?**
+
+La méthode `map()` transforme chaque élément d'un tableau et retourne un nouveau tableau. La méthode `reduce()` parcourt les éléments pour calculer une seule valeur finale, par exemple la valeur totale du stock.
+
+**3. Pourquoi faut-il traiter le cas d’une liste disponible vide pour trouver le prix minimal ?**
+
+Il faut vérifier si la liste est vide, car aucun prix minimal ne peut être déterminé sans produit disponible. Cette vérification évite les erreurs et permet d'afficher un message adapté.
+
+**4. Si le prix de la souris augmente de 10 MAD, que devient la valeur du stock ?**
+
+Le prix de la souris passe de 80 MAD à 90 MAD. Comme son stock est de 8 unités, la valeur totale augmente de 80 MAD.
+
+Nouvelle valeur du stock :
+
+1960 + (10 × 8) = **2040 MAD**.
